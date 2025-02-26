@@ -10,9 +10,11 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
   <body>
-    <header class="fixed top-0 w-full">
+    <header class="fixed top-0 w-full z-20">
       <div class="navbar bg-white">
         <div class="flex-1 max-w-7xl mx-auto justify-between mt-[3px]">
           <a class="btn btn-ghost text-3xl text-[#0052fe]">coinbase</a>
@@ -49,14 +51,14 @@
     <main>
       <section class="section-hero max-w-7xl mx-auto pt-64 md:pt-32">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-          <div class="text-center md:text-right order-last md:order-first">
+          <div data-aos="fade-up" class="text-center md:text-right order-last md:order-first">
             <img
               src="images/hero-img.webp"
               alt="hero"
               class="w-[80%] md:w-full inline"
             />
           </div>
-          <div class="px-6 md:px-0">
+          <div data-aos="fade-right" data-aos-delay="300" class="px-6 md:px-0">
             <h1
               class="text-[48px] md:text-6xl font-normal leading-[52px] md:leadding-relaxed"
             >
@@ -82,7 +84,7 @@
         <div
           class="section-hero max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 items-center"
         >
-          <div>
+          <div data-aos="fade-left">
             <h3 class="text-sm md:text-2xl">Take control of your money</h3>
             <h1
               class="text-3xl md:text-5xl mt-3 leading-[35px] md:leading-[55px]"
@@ -110,7 +112,8 @@
               </button>
             </div>
           </div>
-          <div>
+
+          <div data-aos="fade-up">
             <img
               src="images/about-image.webp"
               alt="#"
@@ -124,7 +127,7 @@
         <div
           class="section-hero max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 items-center"
         >
-          <div class="px-6 md:px-0">
+          <div data-aos="fade-right" class="px-6 md:px-0">
             <h3 class="text-[30px] md:text-4xl md:px-auto">
               Explore crypto like Bitcoin, <br class="hidden md:block" />
               Ethereum, and Dogecoin
@@ -399,7 +402,7 @@
           <div
             class="section-hero mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center px-[25px] py-[8px] md:px-auto md:py-auto"
           >
-            <div class="py-4 px-3 border border-gray-300 rounded-md bg-white">
+            <div data-aos="fade-up" class="py-4 px-3 border border-gray-300 rounded-md bg-white">
               <img
                 src="images/IM1.svg"
                 alt="grid"
@@ -415,7 +418,7 @@
                 >learn more &rarr;</a
               >
             </div>
-            <div class="py-4 px-3 border border-gray-300 rounded-md bg-white">
+            <div data-aos="fade-up" data-aos-delay="200" class="py-4 px-3 border border-gray-300 rounded-md bg-white">
               <img
                 src="images/IM2.svg"
                 alt="grid"
@@ -431,7 +434,7 @@
                 >learn more &rarr;</a
               >
             </div>
-            <div class="py-4 px-3 border border-gray-300 rounded-md bg-white">
+            <div data-aos="fade-up" data-aos-delay="400" class="py-4 px-3 border border-gray-300 rounded-md bg-white">
               <img
                 src="images/IM3.svg"
                 alt="grid"
@@ -527,5 +530,9 @@
       </footer>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
   </body>
 </html>
