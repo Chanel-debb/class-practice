@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Document</h1>
+    <style>
+        .box{
+            padding: 25px 35px;
+            color: white;
+            width: 350px;
+        }
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+        .flex{
+            display: flex;
+            gap: 5px;
+            margin-top: 25px;
+        }
+    </style>
+
+    <div class="box red">
+        <h1>Big box</h1>
+    </div>
+
+    <div class="flex">
+        <button id="red-btn">Make it Red</button>
+        <button id="blue-btn">Make it Blue</button>
+        <button id="green-btn">Make it Green</button>
+
+    </div>
+
+    <script>
+    //data types
+
+    //string
+    //numbers
+    //boolean
+    //null
+    //undefined (are all premitive data types)
+    // arrays
+    //object
+
+    //variables (var)
+    var name='Deborah'
+    // var name='bode'
+
+    // console.log(names)
+    //console.log(name)
+    console.log(typeof(name))
+
+    //Numbers
+    var age=18
+    console.log(age)
+    console.log(typeof(age))
+
+    //Number
+    var age= 18
+    console.log(age);
+    console.log(typeof(age))
+
+    var isOldEnough = true
+    console.log(isOldEnough);
+    console.log(typeof(isOldEnough))
+
+    // var firstname= null
+    var secondname;
+
+    // console.log(firstname +' '+ secondname) //concatination
+
+    // let or const
+
+    let surname = 'Abe'
+    const othername = 'Micheal'
+
+    //surname = 'jr'
+    console.log(surname)
+    // othernames ='WoW'
+
+    //Objects and Arrays
+    let debbie ={
+        name: "Deborah",
+        age: 23,
+
+    }
+    let mike={
+        name: "Micheal",
+        age: 18
+    }
+
+    let joe ={
+        name: "joseph",
+        age: 26
+    }
+
+    console.log(debbie)
+    console.log (debbie.age)
+    console.log(typeof(debbie))
+
+    //Arrays
+
+    const studentsAge = [21, 24, 24, 18, 28, 12]
+    const studentNames =[ 'Mike','Tina','Emily']
+
+    const friends= [debbie, mike,joe]
+
+    console.log(friends)
+    console.log(studentsAge)
+
+
+    //Conditionals
+    // If Statement  (if age is<18, consolelog you are a minor, if not u are an adult)
+
+    age = 21
+
+    if (age < 18){
+        console.log('You are a minor')
+    } else if ( age == 18) {
+        console.log('Congrats you are now an adult')
+    } else if (age > 18) {
+        console.log('You are an adult')
+    } else {
+        console.log('Invalid')
+    }
+
+
+    //let temperature. if temperature is less than 20
+    // console "it is cold" if it is between 20 and 35,
+    //console "it is warm"
+    //if it is higher than 34, console "it is hot"
+
+    temperature = 27
+    if (temperature < 20){
+        console.log('it is cold')
+    }else if( temperature >=20 && temperature <= 35 ){
+        console.log('it is warm')
+    }else if (temperature >34){
+        console.log(' it is hot')
+    }else {
+        console.log('Invalid')
+    }
+
+
+    // AND -&&
+    // OR ||
+
+    //If the trafic light is red, console "stop right there"
+    // If it is green, console "You are ready to go"
+    // If it is yellow, console "Get ready"
+
+     let trafficLight = 'blue'
+    if (trafficLight == 'red'){
+        console.log('stop right there')
+    }else if (trafficLight == 'green'){
+        console.log('You are ready to go')
+    }else if(trafficLight == 'yellow'){
+        console.log('Get ready')
+    } else {
+        console.log("Invalid")
+    }
+
+
+    //LOOPS
+    //for loops and while loops
+
+    //for (let i =0; i < 10; i++)
+    //console.log(i)
+
+    //(well come bk to while loop)
+
+
+    //Functions
+
+    function greet(name){
+console.log("Hello. Good morning" + name)
+    }
+
+    greet("Deborah");
+    greet("Micheaal")
+
+
+    function checkAge(yourAge){
+        console.log("Your age is " + yourAge)
+    }
+
+    checkAge(56);
+
+    function regCourses(course1, course2, course3 ){
+        console.log( "You have registered for " + course1 + ', ' + course2 + ', and ' + course3 + '.')
+
+    }
+    regCourses("Data Analysis", "Web Development", "Accounting");
+    regCourses("UI/UX", "Frontend", "Mobile App")
+   
+
+    //function
+    let firstname ="Bode"
+    let lastname ="Jr"
+    console.log(firstname)
+
+    function greet(name){
+let time = "9 AM"
+    console.log("Hello. Good Morning"+ name +', The time is' + time)
+   console.log(time)
+    }
+    //when you declare a variable inside a function that variable does not exist outside the function
+
+    //Arrow functions
+    const greetings =(name) => console.log( "Hello. Good Morning" + name);
+    greetings( "olabode")
+    
+
+    
+
+    </script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

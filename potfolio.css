@@ -1,0 +1,17 @@
+:root {
+    --color-primary: red;
+    --small-padding: 25px
+}
+
+.text-primary {
+    color: var(--color-primary)
+}
+
+.submit {
+    background-color: var(--color-primary);
+    color: white;
+    padding: var(--small-padding);
+}
+.contact{
+    color: var(--color-primary);
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="fixed top-0 py-3 px-3 md:px-8 w-full">
+        <div class=" mx-auto flex item-center justify-between">
+          <div class="flex items-center space-x-4">
+            <div>
+            <img
+              src="images/lightbulb-regular.svg"
+              alt="lightbulb"
+              class="w-[30px]"
+            />
+          </div>
+          <h3 class="text-slate-900">lightbulb</h3>
+          </div>
+          <div class="item-center space-x-4 hidden md:flex">
+            <h5>Home</h5>
+            <h5>About</h5>
+            <h5>Portfolio</h5>
+            <h5>Contact</h5>
+          </div>
+         <img src="images/bars-solid.svg" alt="" class="w-[30px] md:hidden">
+          <button class="bg-blue-300 px-4 item-center hidden md:inline-block">sign up</button>
+        </div>
+      </nav>
+    </header>
+    
+
+
+      <div class="mt-44">
+        <div class="bg-red-500 px-6 py-5 block md:bg-green-500 text-black md:text-white xl:text-yellow-500 xl:bg-purple-600 ">box red</div>
+        <div class=" px-6 py-5 bg-green-500 block text-white md:text-black xl:text-green-400 md:bg-blue-300 xl:bg-yellow-500 ">box green</div>
+        
+      </div>
+<style>
+  .box{
+    padding: 5px 5px;
+    background: green;
+    color: white;
+    width: 500px;
+  }
+  @media(max-width:800px){
+    .box{
+      background: yellow;
+      color: green;
+    }
+    @media(max-width:600px){
+      .box{
+        background: blue;
+        color: white;
+      }
+    }
+  }
+</style>
+
+      <div class="box">
+        <div>THIS IS A BOX</div>
+      </div>
+      
+    
+
+
+
+
+    <div class=" mt-40">
+      <div class="left-side"></div>
+
+      <div class="right-side">
+        <div>
+          <!-- <img src="images/icons8-avatar-50.png" alt="Avatar" class="Avatar" /> -->
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos,
+            porro nemo. Tempora ipsum aspernatur molestias repellendus similique
+            quos incidunt perferendis enim consectetur ut in facere, quae nihil
+            explicabo aliquid, quaerat magnam libero accusantium distinctio
+            excepturi.
+          </p>
+          <div class="icons">
+            <!-- <img src="images/clipboard-regular.svg" alt="clipboard" />
+            <img src="images/recycle-solid.svg" alt="recycle" />
+            <img src="images/lightbulb-regular.svg" alt="lightbulb" /> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

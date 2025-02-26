@@ -1,0 +1,38 @@
+.avatar{
+    width: 300px;
+}
+label{
+    /* background-color: black; */
+    /* color: aliceblue; */
+    font-size: 15px;
+    padding: 4px;
+    margin: 7px;
+    border-radius: 10px;
+    display: block;
+}
+input{
+   color: aliceblue;
+   font-size: 13px;
+   padding: 5px;
+   margin: 3px;
+   display: block;
+   width: 100%;
+   background-color: #eee;
+}
+.message{
+    color: black;
+    background-color:#fff;
+    height: 150px;
+    width: 500px;
+    margin-top: 15px;
+}
+.submit{
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    padding: 10px 15px;
+    margin: 15px;
+    width: 100%;
+    /* padding-top: 7px; */
+}

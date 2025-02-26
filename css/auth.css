@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    font-family: "inter",serif;
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+.container{
+    background: linear-gradient(to bottom, #00000042,#0000005b), url('../images/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+    padding:15px ;
+    height: 100vh;
+    display: flex;
+    align-items: center ;
+    justify-content: center ;
+}
+.login-box{
+    background-color: white ;
+    width: 450px ;
+    padding:20px 15px ;
+    border-radius: 8px;
+}
+.login-box .title{
+    text-align: center;
+    font-size: 16px;
+}
+.login-box .subtitle{
+    color:#888 ;
+    font-weight: 600px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+form{
+    margin: 30px o;
+    width: 80%;
+    margin: 0 auto;
+}
+.login-box label{
+font-size:14px ;
+font-weight:500 ;
+display: block;
+margin-bottom: 4px;
+}
+.login-box .input-group{
+    margin: 10px;
+}
+.login-box input{
+    width: 100%;
+    padding: 10px 5px;
+}
+.login-box .reset{
+    display: flex;
+    justify-content:flex-end;
+    margin: 10px 0;
+}
+.login-box .reset a,
+.loginbox .end-text {
+    font-size:12px ;
+    color: brown;
+}
+.login-box button {
+    width:100% ;
+    padding: 10px 5px ;
+    background:#000 ;
+    color:#fff ;
+    border: none ;
+    transition: .5s;
+}
+.login-box button:hover{
+    background-color: brown;
+}
+.login-box .end{
+    margin-top:15px ;
+    text-align: center;
+}
